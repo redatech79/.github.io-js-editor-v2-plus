@@ -1,10 +1,10 @@
-<!-- JS-Editor_V2_plus.html -->
+<!-- JS-Editor_V2.1_plus.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JS Editor V2 Plus</title>
+  <title>JS Editor V2.1 Plus</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
   <!-- Acknowledgment Preface for Project by redateck79
@@ -108,7 +108,8 @@
     const editor = ace.edit("jkcodeinput");
     editor.setTheme("ace/theme/chrome");
     editor.session.setMode("ace/mode/html");
-    editor.setValue(`<!DOCTYPE html>\n<html>\n<head><title>Test</title></head>\n<body>\n<h1>Hello World</h1>\n</body>\n</html>`, -1);
+    editor.setValue(`<!DOCTYPE html>\n<html>\n<head><title>Test</title></head>\n<body>\n<h1>Hello World</h1>\n<h3 style="text-align:center; font-family:sans-serif; color:#333;">
+  ⚡ JS Editor V2.1 Plus – Fast, Highlighted, HTML-Ready</h3>\n</body>\n</html>`, -1);
 
     function runCode() {
       const code = editor.getValue();
